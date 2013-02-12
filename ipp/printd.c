@@ -974,7 +974,7 @@ printer_status(int sockfd, struct job *jp)
 			cp = &bp[i];
 
 			hp = (struct ipp_hdr *)cp;
-			i = ntohs(hp->status);
+			i = ntohs(hp->status_);
 			jobid = ntohl(hp->request_id);
 			if (jobid != jp->jobid) {
 				/*
