@@ -1,7 +1,7 @@
 include ../Make.defines.linux
 EXTRA=
 
-PROGS =	deadlock mandatory fcntl
+PROGS =	deadlock mandatory 
 
 all:	${PROGS}
 
